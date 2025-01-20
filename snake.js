@@ -11,9 +11,6 @@ direction = "LEFT";
 let foodCollected = false;
 let score = 0;
 
-
-
-
 // Essen wird platziert
 placeFood();    
 
@@ -88,11 +85,8 @@ function gameloop() {
     // Punkt wird gegeben und in Button eingetragen
     score += 1;
     document.getElementById('scoreButton').textContent = score;
-    placeFood();
-   
-    
+    placeFood(); 
   }
-
 }
 
  // Tasten werden vergeben
@@ -120,16 +114,14 @@ function testGameOver() {
       snake[0].x > cols - 1 ||
       snake[0].y < 0 ||
       snake[0].y > rows - 1 ||
-      dublicatePart
-){
+      dublicatePart)
+      {
     alert("Du hast " + score + " Punkte erreicht!")
     placeFood();
     snake = [{ x: 15, y: 3 }];
     direction = "LEFT";
   }
-
 }
-
 
 // Position des Futters wird zufällig berechnet
 function placeFood() { 
