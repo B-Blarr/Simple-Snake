@@ -1,0 +1,12 @@
+
+div{
+    display: flex;
+    justify-content: left;
+}
+
+button {
+   width: 150px;
+   height: 70px;
+   font-size: 30px;
+
+}
